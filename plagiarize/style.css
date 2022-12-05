@@ -1,0 +1,615 @@
+*
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #000;
+
+}
+section
+{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+}
+
+
+section img{
+  position:absolute;
+  top:0;
+  left:0;
+  max-width:100%;
+}
+
+.sec
+{
+  position:relative;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.sec5
+{
+  position:relative;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.sec h2
+{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family:  'Open Sans', sans-serif;
+}
+
+.sec5 h2
+{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family:  'Open Sans', sans-serif;
+}
+
+
+.sec1
+{
+  position:relative;
+  padding-top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.sec1 h1
+{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Fangsong';
+}
+
+.sec1 h2
+{
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Fangsong';
+}
+
+.sec h3
+{
+    color: #fff;
+    font-family: 'Fangsong';
+    font-size: 1.2em;
+    line-height: 130%;
+    text-align: left;
+    justify-content: center;
+}
+
+.sec5 h3
+{
+    color: #fff;
+    font-family: 'Fangsong';
+    font-size: 1.2em;
+    line-height: 130%;
+    text-align: left;
+    justify-content: center;
+}
+
+.sec5 h4
+    {
+      position: absolute;
+      top: -180px;
+      right: 10px;
+      font-size: 8em;
+      color: rgba(255,255,255,0.05);
+      pointer-events: none;
+    }
+.sec5 h5
+    {
+      font-size: 1.5em;
+      z-index: 1;
+      color:#907aa8;
+    }
+.sec5 h6
+  {   font-family: 'Fangsong';
+      font-size: 1em;
+      color:#fff;
+      font-weight:300;
+      text-align: left;
+    }
+
+.sec1 h3
+{
+    color: #fff;
+    font-family: 'Fangsong';
+    font-size: 1.2em;
+    line-height: 130%;
+    text-align: left;
+    justify-content: center;
+}
+
+.sec1 small
+{
+  color: #fff;
+  font-size:0.9em;
+  line-height: 2em;
+}
+
+.sec1 p
+{
+  color:#fff;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
+  justify-content: center;
+}
+.wrapper
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:80vh;
+}
+.box1
+{
+  background: url(1.png);
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  height:400px;
+  width:400px;
+  box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+  animation:animate1 3s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+.box2
+{
+  background: url(2.png);
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  height:400px;
+  width:400px;
+  box-shadow: 0 5px 5px 20px rgba(0,0,0,0.2);
+  animation:animate1 3s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+@keyframes animate1 {
+  0%
+  {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%
+  {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%
+  {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.container{
+  padding:2rem;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.top-section{
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.timeline{
+  position: relative;
+  min-height:150px;
+}
+.line{
+  position: absolute;
+  z-index: 2;
+  left: calc(50%);
+  width: 2px;
+  top:-50px;
+  bottom:-50px;
+  background-color: #fff;
+  display:none;
+}
+
+.line::before,
+.line::after
+{
+  position: absolute;
+  display: block;
+  content:'';
+  height:1rem;
+  width:1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.line::after
+{
+  bottom:0;
+}
+
+
+
+.section{
+  display:flex;
+  opacity:0;
+  transform:translateX(-100%);
+  transition: 600ms ease;
+  position:relative;
+  z-index:1;
+  margin:0 0;
+  padding:1rem;
+  border-radius: 1rem;
+  align-items: center;
+  min-height:300px;
+}
+
+.section:nth-child(odd)
+{
+  flex-direction: row-reverse;
+  transform:translateX(100%);
+}
+.bead{
+  position:absolute;
+  display:block;
+  height:1rem;
+  width:1rem;
+  border-radius: 50%;
+  background-color:#fff;
+  left:50%;
+  top:20%;
+  transform: translateX(-50%);
+}
+.content{
+  width:calc(50% - 2rem);
+}
+.show-me:nth-child(n){
+  transform:none;
+  opacity:1;
+}
+
+
+.testimonials
+{
+  position: relative;
+  max-width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);
+  height: 90vh;
+  background: #000;
+}
+
+
+.swiper-slide
+{
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin: 0 0px;
+  background-color: #000;
+}
+
+.testimonials .card
+{
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  background: #333;
+  padding: 10px 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.testimonials .card .layer
+{
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#03a9f4,#e91ee3);
+  z-index: 1;
+  transition: 0.5s;
+}
+.testimonials .card:hover .layer
+{
+  top: 0;
+}
+.testimonials .card .content2
+{
+  position: relative;
+  z-index: 2;
+}
+.testimonials .card .content2 p
+{
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  font-family: 'Fangsong';
+  text-align: left;
+}
+.testimonials .card .content2 .imgBX
+{
+  width: 140px;
+  height: 170px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.testimonials .card .content2 h2
+{
+  font-size: 15px;
+  color: #fff;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+.testimonials .card .content2 h2 span
+{
+  color: #03a9f4;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.testimonials .card:hover .content2 h2 span
+{
+  color: #fff;
+}
+
+.sec3
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.square
+{
+  position: relative;
+  width: 420px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square span:nth-child(1)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FFF;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate 6s linear infinite;
+}
+.square:hover span:nth-child(1)
+{
+  border: none;
+  background: rgba(0,0,255,0.8);
+}
+.square span:nth-child(2)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FFF;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+.square:hover span:nth-child(2)
+{
+  border: none;
+  background: rgba(0,0,255,0.8);
+}
+.square span:nth-child(3)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FFF;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate2 10s linear infinite;
+}
+.square:hover span:nth-child(3)
+{
+  border: none;
+  background: rgba(0,0,255,0.8);
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2
+{
+  0%
+  {
+    transform: rotate(360deg);
+  }
+  100%
+  {
+    transform: rotate(0deg);
+  }
+}
+
+.content2
+{
+  position: relative;
+  padding: 40px 60px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.content2 h2
+{
+  font-size: 27px;
+  color: #fff;
+  font-family: 'Fangsong';
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.content2 h2 span1
+{
+  color:#03a9f4;
+}
+
+.content1 h3 span1
+{
+  color:#03a9f4;
+}
+
+.content h3 span1
+{
+  color:#03a9f4;
+}
+
+.content9 h6 span1
+{
+  color:#03a9f4;
+  font-weight: bold;
+}
+
+.content2 a
+{
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  border: 2px solid #fff;
+  padding:6px 18px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Fangsong';
+  font-weight: 600;
+  border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+.content2 a:hover
+{
+  background: #fff;
+  color: #333;
+}
+
+.sec4
+{
+  display: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 400px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+#footer{
+  height: 100px; /*设定footer高度*/
+  bottom: 0;
+  width: 100%; /*展开footer宽度*/
+  background-color: black;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass
+{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+      background: #000;
+      padding-top: 0;
+      margin-top: 0;
+}
+
+
+.container9
+    {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      flex-wrap: wrap;
+      z-index:1;
+    }
+.container9 .card9
+    {
+      position: relative;
+      width:280px;
+      height:400px;
+      margin:20px;
+      box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+      border-radius: 15px;
+      background: rgba(255,255,255,0.1);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid rgba(255,255,255,0.5);
+      border-left: 1px solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(5px);
+    }
+.container9 .card9 .content9
+    {
+      padding: 20px;
+      text-align: center;
+}
+
+
+#main {
+    position: absolute;
+    transform: scale(.7, .7) translate(-50%, -50%);  //主要控制嵌入页面边框
+    width: 700px;
+    height: 400px;
+    top: 240px;
+    left: 360px;
